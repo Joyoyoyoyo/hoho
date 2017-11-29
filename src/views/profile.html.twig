@@ -1,0 +1,12 @@
+{% extends "layout.html.twig" %}
+{% block title %}Profil{% endblock %}
+{% block content %}
+    <h1> {{user.username}} </h1>
+    Email:{{user.email}}<br>
+    Prénom:{{user.firstname}}<br>
+    Nom:{{user.lastname}}
+    
+
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset='utf-8'>
+        <title>{% block title %}Test Silex{% endblock %}</title>
+        <link rel="stylesheet" href="">
+        
+    </head>
+    <body>
+        <nav>
+            <a href="{{path('home')}}" title="Aller à l'acceuil">Acceuil</a>
+            <a href="{{path('listusers')}}" title="Liste utilisateurs">Liste de tous les utilisateurs</a>
+        </nav>
+        {% block content %}{% endblock %}
+        <footer>
+            Mon footer
+        </footer>
+    </body>
+</html>
+
